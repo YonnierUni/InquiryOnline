@@ -39,7 +39,7 @@ nav ul{
 	display: flex;
 }
 nav li:hover{
-	background:rgb(0,0,0,0.1);
+	background: rgb(0,0,0,0.1);
     transition: all 0.3s linear;
     cursor: pointer;
 }
@@ -70,88 +70,54 @@ nav li a{
     text-shadow: 0.1em 0.1em 0.2em gray;
     box-shadow: 0 0 10px gray;
 }
-
-/*TODO LO DE LA BARRA*/
-
-
-
-/*TODO LO DEL CENTRO*/
-.container{
-    width: 30%;
-    margin: auto;
-    text-align: center;
-    margin-top: 29px;
-    display: flex; 
-    height: 500px;
-    background-color: #096aa5;
-    border-radius: 20px;
-    box-shadow: 0 0 10px gray;
-}
-.texto h1{
-    font-size: 24px;
-    margin-bottom: 30px;
-}
-    
-.container .texto{
-    width: 90%;
-	height: 450px;
-	background-color: white;
-    border-radius: 20px;
-    padding: 40px 50px;
-    text-align: center;
-    margin: auto;
-    box-shadow: 0 0 10px gray;
-    
-}
-.entradas{
-    padding: 10px;
-    width: 90%;
-    margin-top: 20px;
-    border:none;
-    border-radius: 20px;
-    box-shadow: 0 0 3px gray;
-}
-
-.fas{
-    margin-right:9px;
-}
-p{
-    text-align: left;
-    line-height: 20px;
-    margin-top: 30px;
-    margin-left: 35px
-}
-p a{
-    color: black;
-    text-decoration: ;
-    font-size: 11px
-}
-p a:hover{
-    color:cornflowerblue;
-}
-.texto .inicio{
-    background-color: orangered;
-    color: white;
-    border: none;
-    padding: 8px 8px;
-    font-size: 18px;
-    border-radius: 20px;
-    width: 50%;
-    margin-top: 50px;
-    text-shadow: 0.1em 0.1em 0.2em gray;
-    box-shadow: 0 0 10px gray;
-}
-.inicio:hover, .botones input:hover{
+.botones input:hover, .texto input:hover{
     background-color: coral;
     transition: all 0.3s linear;
     cursor: pointer;
 }
 
-/*TODO LO DEL CENTRO*/
 
+.container{
+    width: 80%;
+    margin: auto;
+    padding: 0;
+    margin-top: 29px;
+    display: flex; 
+    border-radius: 30px;
+    background-color: white;
+}
+.container .image{
+    width: 50%;
+	height: 500px;
+	background-image: url(../photos/signopregunta.jpg);
+    background-size: contain;
+    border-radius: 20px;
+        
+}
+.container .texto{
+    width: 50%;
+	height: 500px;
+	background-color: white;
+    border-radius: 20px;
+    padding-top: 50px;
+    padding-right: 100px;
+    
+}
+.texto .registro{
+    margin-left: 150px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 8px 8px;
+    font-size: 20px;
+    border-radius: 8px;
+    text-shadow: 0.1em 0.1em 0.2em gray;
+    box-shadow: 0 0 10px gray;
+}
 
-
-/*TODO LO DE ABAJO*/
+.texto p{
+    line-height: 25px;
+}
 footer p{
 	color:white;
 	padding: 10px 25px;
@@ -164,5 +130,6 @@ footer{
     margin: auto;
     text-align: center;
     bottom: 0px;
+    position: absolute;
     box-shadow: 0 0 5px gray;
 }
