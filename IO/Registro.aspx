@@ -27,9 +27,9 @@
                 </nav>
                 <div class="botones">
                     <a href="#">
-                        <input type="submit" value="Acceder"></a>
-                    <a href="#">
-                        <input type="submit" value="Comenzar"></a>
+                        <input runat="server" type="button" value="Acceder"></a>
+                    <a href="../Registro.aspx">
+                        <input runat="server" type="button" value="Comenzar"></a>
                 </div>
             </div>
         </header>
