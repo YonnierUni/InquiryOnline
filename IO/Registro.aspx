@@ -19,7 +19,7 @@
                 <a href="" class="titulo">Inquiry online</a>
                 <nav>
                     <ul>
-                        <li><a href="">Inicio</a></li>
+                        <li><a href="../Inicio.aspx">Inicio</a></li>
                         <li><a href="">Formularios</a></li>
                         <li><a href="">Acerca de</a></li>
                         <li><a href="">Contacto</a></li>
