@@ -12,6 +12,7 @@
   <title>Crea formularios gratis | Inquiry Online</title>
   <link rel="stylesheet" href="css/style_IniciarSesion.css" />
   <script src="https://kit.fontawesome.com/ffd192a881.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/Diseño_Inicio.js"></script>
   <link rel="icon" type="image/png" href="photos/logincuestICON.png" />
 </head>
 
