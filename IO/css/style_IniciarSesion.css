@@ -39,7 +39,7 @@ nav ul{
 	display: flex;
 }
 nav li:hover{
-	background: rgb(0,0,0,0.1);
+	background:rgb(0,0,0,0.1);
     transition: all 0.3s linear;
     cursor: pointer;
 }
@@ -60,6 +60,7 @@ nav li a{
 }
 
 .botones input{
+
     background-color: orangered;
     color: white;
     border: none;
@@ -70,54 +71,214 @@ nav li a{
     text-shadow: 0.1em 0.1em 0.2em gray;
     box-shadow: 0 0 10px gray;
 }
-.botones input:hover, .texto input:hover{
+
+/*TODO LO DE LA BARRA*/
+
+
+
+/*TODO LO DEL CENTRO*/
+.container{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    margin-top: 29px;
+    display: flex; 
+    height: 500px;
+    background-color: #096aa5;
+    border-radius: 20px;
+    box-shadow: 0 0 10px gray;
+}
+.texto h1{
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+
+    
+.container .texto{
+    width: 90%;
+	height: 450px;
+	background-color: white;
+    border-radius: 20px;
+    padding: 40px 50px;
+    text-align: center;
+    margin: auto;
+    box-shadow: 0 0 10px gray;
+    
+}
+/*
+.entradas{
+    padding: 10px;
+    width: 90%;
+    margin-top: 20px;
+    border:none;
+    border-radius: 20px;
+    box-shadow: 0 0 3px gray;
+}
+*/
+.fas{
+    margin-right:9px;
+}
+/*
+p{
+    text-align: left;
+    line-height: 20px;
+    margin-top: 30px;
+    margin-left: 35px
+}
+p a{
+    color: black;
+    text-decoration: ;
+    font-size: 11px
+}
+p a:hover{
+    color:cornflowerblue;
+}
+*/
+
+/*cambios a*/
+
+.inf a{
+  margin-top: 10px;
+	display: block;
+	text-align: right;
+	text-decoration: none;
+	color: #999;
+	font-size: 0.95rem;
+	transition: .3s;
+}
+
+.inf a:hover{
+	color: #096aa5;
+}
+/*------------------------*/
+.texto .inicio{
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 8px 8px;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 50%;
+    margin-top: 15px;
+    text-shadow: 0.1em 0.1em 0.2em gray;
+    box-shadow: 0 0 10px gray;
+}
+
+.inicio:hover, .botones input:hover{
     background-color: coral;
+  
     transition: all 0.3s linear;
     cursor: pointer;
 }
 
 
-.container{
-    width: 80%;
-    margin: auto;
-    padding: 0;
-    margin-top: 29px;
-    display: flex; 
-    border-radius: 30px;
-    background-color: white;
+
+/*/cambiossssssssssssss*/
+
+
+
+.container h2{
+	margin: 15px 0;
+	color: #333;
+	/*text-transform: uppercase;
+	font-size: 2.9rem;*/
 }
-.container .image{
-    width: 50%;
-	height: 500px;
-	background-image: url(../photos/signopregunta.jpg);
-    background-size: contain;
-    border-radius: 20px;
-        
+/*aqui se alarga la lineasajasjk*/
+.container .input-div{
+	position: relative;
+    display: grid;
+    grid-template-columns: 10% 93%;
+    margin: 25px 0;
+    padding: 5px 0;
+    border-bottom: 2px solid #d9d9d9;
 }
-.container .texto{
-    width: 50%;
-	height: 500px;
-	background-color: white;
-    border-radius: 20px;
-    padding-top: 50px;
-    padding-right: 100px;
-    
-}
-.texto .registro{
-    margin-left: 150px;
-    background-color: orangered;
-    color: white;
-    border: none;
-    padding: 8px 8px;
-    font-size: 20px;
-    border-radius: 8px;
-    text-shadow: 0.1em 0.1em 0.2em gray;
-    box-shadow: 0 0 10px gray;
+.container .input-div.one{
+	margin-top: 0;
 }
 
-.texto p{
-    line-height: 25px;
+
+.i{
+	color: #d9d9d9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
+.i i{
+	transition: .3s;
+}
+
+.input-div > div{
+    position: relative;
+	height: 45px;
+}
+
+.input-div > div > h5{
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #999;
+	font-size: 18px;
+	transition: .3s;
+}
+
+.input-div:before, .input-div:after{
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	width: 0%;
+	height: 2px;
+	background-color: #096aa5;
+	transition: .4s;
+}
+
+.input-div:before{
+	right: 50%;
+}
+
+.input-div:after{
+	left: 50%;
+}
+
+.input-div.focus:before, .input-div.focus:after{
+	width: 50%;
+}
+
+.input-div.focus > div > h5{
+	top: -5px;
+	font-size: 15px;
+}
+
+.input-div.focus > .i > i{
+	color: #096aa5;
+}
+
+.input-div > div > input{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: none;
+	padding: 0.5rem 0.7rem;
+	font-size: 1.2rem;
+	color: #555;
+	font-family: 'poppins', sans-serif;
+}
+
+.input-div.pass{
+	margin-bottom: 4px;
+}
+
+/*TODO LO DEL CENTRO*/
+
+
+
+/*TODO LO DE ABA JO*/
 footer p{
 	color:white;
 	padding: 10px 25px;
@@ -130,6 +291,7 @@ footer{
     margin: auto;
     text-align: center;
     bottom: 0px;
-    position: absolute;
     box-shadow: 0 0 5px gray;
 }
+
+
